@@ -1,0 +1,13 @@
+.productRow.pink td:first-of-type{
+    color:rgb(243, 135, 153);
+}
+.productRow.red td:first-of-type{
+    color:darkred;
+}
+.productRow.white td:first-of-type{
+    color: rgb(201, 201, 110);
+}
+.productRow td:first-of-type {
+    padding-left:50px;
+    
+}

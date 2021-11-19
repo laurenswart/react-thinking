@@ -1,0 +1,9 @@
+@import url("_searchBar.css");
+@import url("_productTable.css");
+@import url("_ProductCategoryRow.css");
+@import url("_ProductRow.css");
+@import url("_FilterableProductTable.css");
+
+body {
+    background-color: rgb(24, 22, 22);
+}

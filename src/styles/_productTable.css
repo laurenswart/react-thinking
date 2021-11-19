@@ -1,0 +1,14 @@
+.productTable {
+    width:100%;
+    text-align: left;
+}
+.productTable thead {
+    color:olivedrab;
+    height: 40px;   
+    color:palegoldenrod;
+    font-size: 20px;
+    
+}
+.productTable thead th{
+    padding-left: 10px;
+}
