@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProductTable from './ProductTable';
 import SearchBar from './SearchBar';
 
 const FilterableProductTable = () => {
-
+    const [searchValue, setSearchValue] = useState("");
     let wines = [
         {id:"9","name":"BLOCK NINE",year:"2009",grapes:"Pinot Noir",country:"USA",region:"California",description:"With hints of ginger and spice, this wine makes an excellent complement to light appetizer and dessert fare for a holiday gathering.",picture:"block_nine.jpg",price:"21","capacity":"75",color:"white",extra:null},
         {id:"11","name":"BODEGA LURTON",year:"2011",grapes:"Pinot Gris",country:"Argentina",region:"Mendoza",description:"Solid notes of black currant blended with a light citrus make this wine an easy pour for varied palates.",picture:"bodega_lurton.jpg",price:"103.8","capacity":"75",color:"red",extra:null},
@@ -16,8 +16,8 @@ const FilterableProductTable = () => {
 
     return (
         <div  className="filterableProductTable"> 
-            <SearchBar />
-            <ProductTable wines={wines}/>
+            <SearchBar searchValue={searchValue} onChange={setSearchValue}/>
+            <ProductTable wines={wines} searchValue={searchValue}/>
         </div>
     );
 };

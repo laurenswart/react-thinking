@@ -1,11 +1,11 @@
 .productCategoryRow{
-    height: 40px;   
-    background-color:black;
-    color:palegoldenrod;
+    height: 40px;
+    color: palegoldenrod;
 }
 
 .productCategoryRow td {
     padding-left:10px;
     border-radius: 4px;
+    background-color: rgb(163, 187, 114);
     
 }

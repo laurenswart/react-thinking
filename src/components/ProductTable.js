@@ -9,6 +9,9 @@ const ProductTable = (props) => {
 
     let rows = [];
     wines.forEach( wine => {
+        if (wine.name.toLowerCase().indexOf(props.searchValue.toLowerCase())===-1){
+            return;
+        }
         if (wine.year !== lastCategory){
             rows.push(
                 <ProductCategoryRow category={wine.year} key={wine.year} />
