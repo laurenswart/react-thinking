@@ -9,18 +9,23 @@ const ProductTable = (props) => {
 
     let rows = [];
     wines.forEach( wine => {
+        //name must match the search value
         if (wine.name.toLowerCase().indexOf(props.searchValue.toLowerCase())===-1){
             return;
         }
-        if (wine.year !== lastCategory){
+        //wine must be in selected country
+        if (props.countryValue !== '' && wine.country.toLowerCase() !== props.countryValue.toLowerCase()){
+            return;
+        }
+        if (wine.region !== lastCategory){
             rows.push(
-                <ProductCategoryRow category={wine.year} key={wine.year} />
+                <ProductCategoryRow category={wine.region} key={wine.region} />
             );
         }
         rows.push(
             <ProductRow wine={wine} key={wine.name} />
         );
-        lastCategory = wine.year;
+        lastCategory = wine.region;
     })
 
     return (

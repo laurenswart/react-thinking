@@ -36,3 +36,7 @@ th, td{
 .productTable tbody tr:last-of-type {
     border-bottom: 2px solid olivedrab;
 }
+
+.productTable thead th:last-of-type {
+    width:20%;
+}

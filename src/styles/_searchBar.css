@@ -1,8 +1,13 @@
-.searchBar {
-    width:100%;
-    margin: 50px 0;
-    min-height: 30px;
+.searchBar{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
     
+}
+.searchBar > * {
+    min-height: 30px;
+    display: flex;
+    flex-grow: 1;
 }
 
 
