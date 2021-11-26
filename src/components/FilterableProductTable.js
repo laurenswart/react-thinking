@@ -33,11 +33,10 @@ const FilterableProductTable = () => {
 function getCountries(wines){
     let countries = [];
     for(let wine of wines){
-        if (countries.indexOf(wine.country)==-1){
+        if (countries.indexOf(wine.country)===-1){
             countries.push(wine.country);
         }
     }
-    console.log(countries);
     return countries;
 }
 export default FilterableProductTable;
