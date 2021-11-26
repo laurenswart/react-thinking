@@ -1,6 +1,6 @@
 # View this project online
 
-This project has been deployed on heroku. Visit it at https://react-thinking.herokuapp.com/
+This project has been deployed on heroku. Check it out here ->  https://react-thinking.herokuapp.com/
 
 # Getting Started with Create React App
 
